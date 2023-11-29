@@ -1,0 +1,135 @@
+/* Reset some default browser styles */
+body, h1, label, select, input, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+h1 {
+    color: #333;
+    margin: 20px 0;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+input{
+    padding: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0074cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.roads {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 450px;
+    margin: 0 auto;
+}
+
+.lane {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10vw;
+
+}
+
+.road {
+    width: 10px;
+    height: 200px;
+    background-color: green;
+    border: 2px solid #333;
+}
+
+.lane-info {
+    text-align: center;
+}
+
+.lane-number, .traffic-size {
+    font-weight: bold;
+}
+
+/* Additional styling for the model selection dropdown */
+#modelSelect {
+    font-size: 16px;
+    padding: 5px;
+}
+
+/* Additional styling for the prediction result */
+#predictionResult {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Add any additional styles you need for the specific elements on your page */
+
+/* Styling for the legend box */
+.legend-box {
+    background-color: #fff;
+    border: 2px solid #333;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+.legend-box h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 2px solid #333;
+    border-radius: 50%;
+}
+
+.legend-text {
+    font-size: 16px;
+}
+
+/* Color styles for the legend items */
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.red {
+    background-color: red;
+}
+
+.stop-button {
+    background-color: red;
+}

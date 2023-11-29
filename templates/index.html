@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Traffic Prediction</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Traffic Prediction</h1>
+
+    <label for="modelSelect">Select Model: </label>
+    <select id="modelSelect">
+        <option value="model1">Model 1</option>
+        <option value="model2">Model 2</option>
+        <option value="model3">Model 3</option>
+        <option value="model4">Model 4</option>
+    </select>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+        <!-- Separate inputs for date and time -->
+        <div class="datetime-container">
+            <label for="date">Date: </label>
+            <input type="date" id="date">
+            <label for="time">Time: </label>
+            <input type="time" id="time" step="3600" oninput="setMinutesToZero(this)">
+        </div>
+        <br>
+        <br>
+        <button id="runButton" onclick="toggleSimulation(this)">Run</button>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+        <!-- Add the legend box -->
+    <div class="legend-box">
+            <h2>Legend</h2>
+            <div class="legend-item">
+                <div class="legend-color green"></div>
+                <div class="legend-text">Light Traffic (0-55)</div>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color yellow"></div>
+                <div class="legend-text">Moderate Traffic (56-110)</div>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color red"></div>
+                <div class="legend-text">High Traffic (110+)</div>
+            </div>
+    </div>
+
+    <div class="roads">
+        <div class="lane" id="lane1">
+            <div class="road"></div>
+            <div class="lane-info">
+                <div class="lane-number">Lane 1</div>
+                <div class="traffic-size">Traffic: 50</div>
+            </div>
+        </div>
+        <div class="lane" id="lane2">
+            <div class="road"></div>
+            <div class="lane-info">
+                <div class="lane-number">Lane 2</div>
+                <div class="traffic-size">Traffic: 40</div>
+            </div>
+        </div>
+        <div class="lane" id="lane3">
+            <div class="road"></div>
+            <div class="lane-info">
+                <div class="lane-number">Lane 3</div>
+                <div class="traffic-size">Traffic: 150</div>
+            </div>
+        </div>
+        <div class="lane" id="lane4">
+            <div class="road"></div>
+            <div class="lane-info">
+                <div class="lane-number">Lane 4</div>
+                <div class="traffic-size">Traffic: 90</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
